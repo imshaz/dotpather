@@ -3,7 +3,7 @@ type ObjectWithPath = {
 };
 
 export default function dotpath(str: string) {
-  var parts = str.toString().split(".");
+  var parts = str.split(".");
   var len = parts.length;
 
   return function parse(obj: ObjectWithPath) {
